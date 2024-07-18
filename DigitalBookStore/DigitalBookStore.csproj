@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{738C275E-9ED3-4C34-B30A-7CF428E9B3B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalBookStore</RootNamespace>
+    <AssemblyName>DigitalBookStore</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\ASUS\Downloads\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Billing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Billing.Designer.cs">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booksell.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="booksell.Designer.cs">
+      <DependentUpon>booksell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Password.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Change Password.Designer.cs">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataConn.cs" />
+    <Compile Include="forgotpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpassword.Designer.cs">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homepage.Designer.cs">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="home_uc.Designer.cs">
+      <DependentUpon>home_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loder1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loder1.Designer.cs">
+      <DependentUpon>loder1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagestock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pagestock.Designer.cs">
+      <DependentUpon>pagestock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SellView.Designer.cs">
+      <DependentUpon>SellView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewstock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="viewstock.Designer.cs">
+      <DependentUpon>viewstock.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Billing.resx">
+      <DependentUpon>Billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booksell.resx">
+      <DependentUpon>booksell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Password.resx">
+      <DependentUpon>Change Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpassword.resx">
+      <DependentUpon>forgotpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homepage.resx">
+      <DependentUpon>homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home_uc.resx">
+      <DependentUpon>home_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loder1.resx">
+      <DependentUpon>loder1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagestock.resx">
+      <DependentUpon>pagestock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SellView.resx">
+      <DependentUpon>SellView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewstock.resx">
+      <DependentUpon>viewstock.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\DigitalBookStore.exe.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\DigitalBookStore.exe" />
+    <Content Include="bin\Debug\DigitalBookStore.pdb" />
+    <Content Include="bin\Debug\Images\1.jpeg" />
+    <Content Include="bin\Debug\Images\10.jpeg" />
+    <Content Include="bin\Debug\Images\2.jpeg" />
+    <Content Include="bin\Debug\Images\3.jpeg" />
+    <Content Include="bin\Debug\Images\4.jpeg" />
+    <Content Include="bin\Debug\Images\5.jpeg" />
+    <Content Include="bin\Debug\Images\6.jpeg" />
+    <Content Include="bin\Debug\Images\7.jpeg" />
+    <Content Include="bin\Debug\Images\8.jpeg" />
+    <Content Include="bin\Debug\Images\9.jpeg" />
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\9.jpeg" />
+    <None Include="Resources\loading page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
